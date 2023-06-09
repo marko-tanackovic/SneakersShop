@@ -21,6 +21,7 @@ namespace SneakersShop.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private SneakersShopContext _context;
@@ -36,6 +37,7 @@ namespace SneakersShop.API.Controllers
 
         // GET: api/<ProductsController>
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Get([FromQuery] ProductSearch search,
                                  [FromServices] ISearchProductsQuery query)
         {
