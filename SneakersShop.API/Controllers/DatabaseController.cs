@@ -683,7 +683,7 @@ namespace SneakersShop.API.Controllers
 
                 _context.SaveChanges();
 
-                return NoContent();
+                return StatusCode(201);
             } catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
