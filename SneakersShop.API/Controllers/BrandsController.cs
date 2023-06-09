@@ -34,6 +34,7 @@ namespace SneakersShop.API.Controllers
 
         // GET: api/<BrandsController>
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Get([FromQuery] KeywordSearch search,
                                  [FromServices] IGetBrandsQuery query)
         {
