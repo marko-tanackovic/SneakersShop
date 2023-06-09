@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Tanac\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Tanac\\.nuget\\packages"
+    ]
+  }
+}
